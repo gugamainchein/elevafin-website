@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://elevafin.com.br/sitemap.xml
