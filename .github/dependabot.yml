@@ -1,0 +1,58 @@
+# Configuração do Dependabot para monitoramento automático de vulnerabilidades
+# Documentação: https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  # Monitorar dependências do npm
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/Sao_Paulo"
+    # Agrupar atualizações de dependências relacionadas
+    groups:
+      # Agrupar dependências de desenvolvimento
+      development-dependencies:
+        dependency-type: "development"
+      # Agrupar dependências de produção
+      production-dependencies:
+        dependency-type: "production"
+    # Criar pull requests para atualizar dependências
+    open-pull-requests-limit: 10
+    # Permitir atualizações de versão
+    versioning-strategy: "increase"
+    # Adicionar reviewers automáticos (opcional - adicione seu username do GitHub)
+    # reviewers:
+    #   - "seu-username"
+    # Adicionar labels aos PRs
+    labels:
+      - "dependencies"
+      - "security"
+    # Rebase strategy
+    rebase-strategy: "auto"
+    # Commit message prefix
+    commit-message:
+      prefix: "chore"
+      prefix-development: "chore"
+      include: "scope"
+
+  # Monitorar GitHub Actions (se houver workflows)
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/Sao_Paulo"
+    labels:
+      - "github-actions"
+      - "security"
+    commit-message:
+      prefix: "ci"
+
+# Configurações adicionais recomendadas:
+# 1. Habilite "Dependabot security updates" nas configurações do repositório
+# 2. Habilite "Dependabot alerts" para receber notificações
+# 3. Configure branch protection rules para exigir revisão nos PRs do Dependabot

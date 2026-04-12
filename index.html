@@ -25,17 +25,26 @@
     </noscript>
 
     <!-- Google tag (gtag.js) - Async loading -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-TCMCFHP744"
-    ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-TCMCFHP744");
+      // Inject Google Analytics ID from environment variable
+      (function () {
+        const GA_ID = "%VITE_GA_ID%";
+        if (GA_ID && GA_ID !== "" && GA_ID !== "%VITE_GA_ID%") {
+          // Load gtag script
+          const script = document.createElement("script");
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+          document.head.appendChild(script);
+
+          // Initialize gtag
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", GA_ID);
+        }
+      })();
     </script>
 
     <!-- Primary Meta Tags -->

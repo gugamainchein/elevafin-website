@@ -6,7 +6,19 @@ import { defineConfig, loadEnv } from "vite";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, ".", "");
   return {
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      react(),
+      tailwindcss(),
+      {
+        name: "html-transform",
+        transformIndexHtml(html) {
+          // Replace environment variables in HTML
+          return html
+            .replace(/%VITE_GA_ID%/g, env.VITE_GA_ID || "")
+            .replace(/%VITE_API_ENDPOINT%/g, env.VITE_API_ENDPOINT || "");
+        },
+      },
+    ],
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "."),

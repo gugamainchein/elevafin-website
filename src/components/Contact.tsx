@@ -86,7 +86,8 @@ export default function Contact() {
     }
 
     try {
-      const response = await fetch("https://api.elevafin.com.br/send", {
+      const apiEndpoint = import.meta.env.VITE_API_ENDPOINT!;
+      const response = await fetch(`${apiEndpoint}/send`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
