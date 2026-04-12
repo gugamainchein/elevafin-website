@@ -1,9 +1,9 @@
+import { Mail, MapPin, Phone, Send } from "lucide-react";
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { useState, FormEvent, ChangeEvent, useEffect } from "react";
+import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import {
-  loadCaptchaEnginge,
   LoadCanvasTemplate,
+  loadCaptchaEnginge,
   validateCaptcha,
 } from "react-simple-captcha";
 
@@ -142,7 +142,7 @@ export default function Contact() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl mb-6">
+            <h2 className="text-3xl md:text-4xl mb-6">
               Vamos <span className="text-brand-accent">Escalar</span> seu
               Negócio?
             </h2>
@@ -331,9 +331,14 @@ export default function Contact() {
                 type="submit"
                 disabled={isSubmitting}
                 className="w-full bg-brand-accent text-white font-bold py-4 rounded-xl hover:bg-blue-600 transition-all shadow-lg shadow-brand-accent/20 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+                aria-label={
+                  isSubmitting
+                    ? "Enviando mensagem"
+                    : "Enviar mensagem de contato"
+                }
               >
                 {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
-                <Send className="w-5 h-5" />
+                <Send className="w-5 h-5" aria-hidden="true" />
               </button>
             </form>
           </motion.div>

@@ -1,5 +1,5 @@
+import { Award, Briefcase, CheckCircle2, Target } from "lucide-react";
 import { motion } from "motion/react";
-import { Award, Briefcase, Target, CheckCircle2 } from "lucide-react";
 import Wanessa from "../assets/1774298601282.png";
 
 export default function About() {
@@ -16,8 +16,11 @@ export default function About() {
             <div className="relative z-10">
               <img
                 src={Wanessa}
-                alt="Wanessa Miranda"
+                alt="Wanessa Miranda - Especialista em Consultoria Financeira e Captação de Recursos"
                 className="rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]"
+                loading="lazy"
+                width="600"
+                height="800"
                 referrerPolicy="no-referrer"
               />
 
@@ -39,7 +42,7 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl mb-8 text-brand-primary">
+            <h2 className="text-3xl md:text-4xl mb-8 text-brand-primary">
               Expertise que Gera{" "}
               <span className="text-brand-accent">Confiança</span>
             </h2>
@@ -58,9 +61,9 @@ export default function About() {
                     <Award className="w-6 h-6 text-brand-accent" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-brand-primary mb-1">
+                    <h3 className="font-bold text-brand-primary mb-1 text-base">
                       Case de Sucesso
-                    </h4>
+                    </h3>
                     <p className="text-sm text-slate-600">
                       +R$ 80M em crédito estruturado.
                     </p>
@@ -71,9 +74,9 @@ export default function About() {
                     <Target className="w-6 h-6 text-brand-accent" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-brand-primary mb-1">
+                    <h3 className="font-bold text-brand-primary mb-1 text-base">
                       Foco em IA
-                    </h4>
+                    </h3>
                     <p className="text-sm text-slate-600">
                       Automação e análise inteligente.
                     </p>
@@ -82,10 +85,13 @@ export default function About() {
               </div>
 
               <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                <h4 className="font-bold text-brand-primary mb-4 flex items-center gap-2">
-                  <Briefcase className="w-5 h-5 text-brand-accent" />
+                <h3 className="font-bold text-brand-primary mb-4 flex items-center gap-2 text-lg">
+                  <Briefcase
+                    className="w-5 h-5 text-brand-accent"
+                    aria-hidden="true"
+                  />
                   Diferenciais Competitivos
-                </h4>
+                </h3>
                 <ul className="space-y-3">
                   {[
                     "Acesso direto a tomadores de decisão em bancos",
