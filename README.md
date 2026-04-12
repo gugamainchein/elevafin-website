@@ -512,8 +512,6 @@ For questions or issues:
 - Built with [React](https://reactjs.org/) and [Vite](https://vitejs.dev/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
 - Icons by [Lucide](https://lucide.dev/)
-- AI powered by [Google Gemini](https://deepmind.google/technologies/gemini/)
-- SEO best practices inspired by CNN Brasil
 
 ---
 
