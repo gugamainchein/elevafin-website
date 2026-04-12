@@ -31,3 +31,20 @@ declare module "*.webp" {
   const value: string;
   export default value;
 }
+
+/**
+ * Google Analytics gtag function types
+ */
+interface Window {
+  dataLayer: unknown[];
+  gtag: (
+    command: "event" | "config" | "js" | "set",
+    targetId: string | Date,
+    config?: {
+      event_category?: string;
+      event_label?: string;
+      value?: number;
+      [key: string]: unknown;
+    },
+  ) => void;
+}

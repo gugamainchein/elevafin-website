@@ -100,6 +100,14 @@ export default function Contact() {
       });
 
       if (response.ok) {
+        // Enviar evento para Google Analytics
+        if (typeof window !== "undefined" && window.gtag) {
+          window.gtag("event", "form_submit", {
+            event_category: "engagement",
+            event_label: "Formulário de Contato",
+          });
+        }
+
         setSubmitStatus({
           type: "success",
           message:
