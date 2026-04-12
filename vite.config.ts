@@ -28,10 +28,19 @@ export default defineConfig(({ mode }) => {
       // Enable code splitting and optimization
       rollupOptions: {
         output: {
-          manualChunks: {
-            "vendor-react": ["react", "react-dom"],
-            "vendor-motion": ["motion"],
-            "vendor-icons": ["lucide-react"],
+          manualChunks: (id) => {
+            if (id.includes("node_modules")) {
+              if (id.includes("react") || id.includes("react-dom")) {
+                return "vendor-react";
+              }
+              if (id.includes("motion")) {
+                return "vendor-motion";
+              }
+              if (id.includes("lucide-react")) {
+                return "vendor-icons";
+              }
+              return "vendor";
+            }
           },
         },
       },
