@@ -320,8 +320,6 @@ https://validator.schema.org/
 https://pagespeed.web.dev/
 ```
 
-📚 **Detailed Documentation:** See [SEO_DOCUMENTATION.md](./SEO_DOCUMENTATION.md)
-
 ---
 
 ## 🧪 Testing
@@ -506,7 +504,6 @@ For questions or issues:
 
 - 📧 Email: contato@elevafin.com.br
 - 🌐 Website: [elevafin.com.br](https://elevafin.com.br)
-- 📱 WhatsApp: +55 (11) 91878-6040
 
 ---
 
@@ -522,7 +519,7 @@ For questions or issues:
 
 <div align="center">
 
-**Developed with ❤️ for ElevaFin**
+**Developed with ❤️ by Gustavo Mainchein**
 
 ⭐ Star this repository if you found it helpful!
 
