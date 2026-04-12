@@ -10,12 +10,14 @@ export default function SchemaLocalBusiness() {
     "@id": "https://elevafin.com.br/#localbusiness",
     name: "ElevaFin",
     image: "https://elevafin.com.br/favicon.svg",
-    priceRange: "$$",
+    priceRange: "$$-$$$",
     address: {
       "@type": "PostalAddress",
-      addressCountry: "BR",
+      streetAddress: "Rua Manoel de Carvalho",
       addressLocality: "São Paulo",
       addressRegion: "SP",
+      postalCode: "02912-020",
+      addressCountry: "BR",
     },
     geo: {
       "@type": "GeoCoordinates",
@@ -23,7 +25,7 @@ export default function SchemaLocalBusiness() {
       longitude: "-46.6333",
     },
     url: "https://elevafin.com.br",
-    telephone: "+55-11-99999-9999",
+    telephone: "+55-11-99814-4441",
     email: "contato@elevafin.com.br",
     openingHoursSpecification: [
       {
