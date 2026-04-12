@@ -1,4 +1,28 @@
-User-agent: *
-Disallow: /
+# Robots.txt - ElevaFin
+# Gerado em: 12/04/2026
 
+User-agent: *
+Allow: /
+
+# Permite todos os recursos estáticos
+Allow: /assets/
+Allow: /favicon.svg
+
+# Bloqueia arquivos de desenvolvimento
+Disallow: /src/
+Disallow: /*.json$
+
+# Crawlers específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Sitemap
 Sitemap: https://elevafin.com.br/sitemap.xml
+
+# Última atualização: 12/04/2026

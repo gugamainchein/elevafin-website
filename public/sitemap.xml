@@ -1,16 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Página Principal -->
+  <url>
+    <loc>https://elevafin.com.br/</loc>
+    <lastmod>2026-04-12T13:44:00-03:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://elevafin.com.br/favicon.svg</image:loc>
+      <image:title>ElevaFin - Consultoria Financeira</image:title>
+      <image:caption>Captação de Recursos com Inteligência Estratégica</image:caption>
+    </image:image>
+  </url>
 
-<url>
-  <loc>https://elevafin.com.br/</loc>
-  <lastmod>2026-04-02T01:06:47+00:00</lastmod>
-</url>
+  <!-- Seção Serviços -->
+  <url>
+    <loc>https://elevafin.com.br/#servicos</loc>
+    <lastmod>2026-04-12T13:44:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
+  <!-- Seção Sobre -->
+  <url>
+    <loc>https://elevafin.com.br/#sobre</loc>
+    <lastmod>2026-04-12T13:44:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Seção Contato -->
+  <url>
+    <loc>https://elevafin.com.br/#contato</loc>
+    <lastmod>2026-04-12T13:44:00-03:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
 </urlset>
