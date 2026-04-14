@@ -65,7 +65,7 @@ export default function About() {
                       Case de Sucesso
                     </h3>
                     <p className="text-sm text-slate-600">
-                      +R$ 80M em crédito estruturado.
+                      +R$ 80MM em crédito estruturado.
                     </p>
                   </div>
                 </div>

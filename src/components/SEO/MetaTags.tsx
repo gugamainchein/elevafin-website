@@ -15,7 +15,7 @@ interface MetaTagsProps {
 
 export default function MetaTags({
   title = "ElevaFin - Captação de Recursos com Inteligência Estratégica | Consultoria Financeira",
-  description = "Transformamos sua necessidade de crédito em soluções estruturadas. Mais de 15 anos de mercado financeiro unindo experiência bancária e tecnologia de IA. +R$ 80M em crédito estruturado.",
+  description = "Transformamos sua necessidade de crédito em soluções estruturadas. Mais de 15 anos de mercado financeiro unindo experiência bancária e tecnologia de IA. +R$ 80MM em crédito estruturado.",
   keywords = "captação de recursos, crédito empresarial, consultoria financeira, inteligência artificial, IA financeira, crédito estruturado, análise de risco, automação financeira, consultoria bancária, linhas de crédito",
   ogImage = "https://elevafin.com.br/favicon.svg",
   canonical = "https://elevafin.com.br",

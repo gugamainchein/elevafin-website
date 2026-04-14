@@ -1,5 +1,5 @@
 import { cn } from "@/src/lib/utils";
-import { Menu, TrendingUp, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
@@ -32,12 +32,10 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <TrendingUp className="w-8 h-8 text-brand-accent" />
-          <span className="text-xl font-display font-bold tracking-tight text-brand-primary">
-            ELEVA<span className="text-brand-accent">FIN</span>
-          </span>
-        </div>
+        <a href="#home" className="flex items-end">
+          <img src="/logo.png" alt="ElevaFin" className="h-10 w-auto" />
+          <img src="/logo_second_part.png" alt="" className="h-4 w-auto" />
+        </a>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8">
