@@ -14,9 +14,9 @@ interface MetaTagsProps {
 }
 
 export default function MetaTags({
-  title = "ElevaFin - Captação de Recursos com Inteligência Estratégica | Consultoria Financeira",
-  description = "Transformamos sua necessidade de crédito em soluções estruturadas. Mais de 15 anos de mercado financeiro unindo experiência bancária e tecnologia de IA. +R$ 80MM em crédito estruturado.",
-  keywords = "captação de recursos, crédito empresarial, consultoria financeira, inteligência artificial, IA financeira, crédito estruturado, análise de risco, automação financeira, consultoria bancária, linhas de crédito",
+  title = "ElevaFin - Crédito Negado? Caixa Apertado? Financeiro Desorganizado? A gente resolve",
+  description = "Caixa apertado, crédito negado ou financeiro desorganizado? Com +15 anos dentro de bancos, organizamos, estruturamos e captamos o recurso que sua empresa precisa para crescer. Aprovação em até 30 dias, juros reduzidos. +R$ 80MM estruturados.",
+  keywords = "crédito negado, caixa apertado, juros altos, financeiro desorganizado, aprovação de crédito, crédito empresarial, consultoria financeira empresarial, como conseguir crédito, crédito para PME, organização financeira, capital de giro, crédito estruturado, redução de juros, negociação bancária, financeiro pessoal e empresarial misturado",
   ogImage = "https://elevafin.com.br/favicon.svg",
   canonical = "https://elevafin.com.br",
 }: MetaTagsProps) {

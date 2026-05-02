@@ -16,13 +16,23 @@ export default function About() {
             <div className="relative z-10">
               <img
                 src={Wanessa}
-                alt="Wanessa Miranda - Especialista em Consultoria Financeira e Captação de Recursos"
+                alt="Wanessa Mainchein - Especialista em Consultoria Financeira e Captação de Recursos"
                 className="rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]"
                 loading="lazy"
                 width="600"
                 height="800"
                 referrerPolicy="no-referrer"
               />
+
+              {/* Name Badge */}
+              <div className="absolute bottom-8 left-0 right-0 mx-6 bg-gradient-to-r from-brand-primary/95 to-brand-secondary/95 backdrop-blur-sm px-6 py-4 rounded-2xl border border-brand-accent/20">
+                <p className="text-white text-2xl font-bold tracking-wide">
+                  Wanessa Mainchein
+                </p>
+                <p className="text-brand-accent text-sm font-medium uppercase tracking-wider mt-1">
+                  CEO & Fundadora
+                </p>
+              </div>
 
               {/* Experience Badge */}
               <div className="absolute -bottom-10 -right-10 bg-brand-primary text-white p-8 rounded-3xl shadow-2xl border-4 border-white">
@@ -75,10 +85,10 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-bold text-brand-primary mb-1 text-base">
-                      Foco em IA
+                      Resultado Garantido
                     </h3>
                     <p className="text-sm text-slate-600">
-                      Automação e análise inteligente.
+                      Crédito aprovado em até 30 dias.
                     </p>
                   </div>
                 </div>
@@ -94,9 +104,9 @@ export default function About() {
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    "Acesso direto a tomadores de decisão em bancos",
-                    "Modelagem financeira personalizada para cada setor",
-                    "Uso de IA para otimização de garantias e taxas",
+                    "Conhecimento profundo dos critérios de aprovação bancária",
+                    "Narrativas estratégicas que tornam sua empresa mais atrativa",
+                    "Organização financeira que reduz riscos e melhora taxas",
                     "Transparência total em todas as etapas do processo",
                   ].map((item) => (
                     <li

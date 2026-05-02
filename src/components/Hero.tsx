@@ -6,6 +6,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import { motion } from "motion/react";
+import heroImage from "../assets/hero-finance.jpg";
 
 export default function Hero() {
   return (
@@ -26,15 +27,14 @@ export default function Hero() {
               Consultoria & Finanças
             </div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-6 text-brand-primary">
-              Captação de Recursos com{" "}
-              <span className="text-brand-accent">
-                Inteligência Estratégica
-              </span>
+              Seu negócio cresce, mas o{" "}
+              <span className="text-brand-accent">financeiro trava?</span> A
+              gente resolve isso.
             </h1>
             <p className="text-lg md:text-xl text-slate-600 mb-8 max-w-xl leading-relaxed">
-              Transformamos sua necessidade de crédito em soluções estruturadas.
-              Mais de 15 anos de mercado financeiro unindo experiência bancária
-              e tecnologia de IA de ponta.
+              Caixa apertado, crédito negado ou financeiro desorganizado? A gente
+              organiza, estrutura e capta o recurso que sua empresa precisa para
+              crescer.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
@@ -49,22 +49,26 @@ export default function Hero() {
                 />
               </a>
               <a
-                href="#services"
+                href="#pain-points"
                 className="flex items-center justify-center gap-2 bg-white text-brand-primary border-2 border-slate-300 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all"
-                aria-label="Ver Nossos Serviços"
+                aria-label="Ver como funciona na prática"
               >
-                Nossos Serviços
+                Ver como funciona →
               </a>
             </div>
 
-            <div className="mt-12 flex items-center gap-6 text-slate-500">
+            <div className="mt-12 flex flex-wrap items-center gap-4 text-slate-500">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-5 h-5 text-brand-success" />
-                <span className="text-sm font-medium">Crédito Estruturado</span>
+                <span className="text-sm font-medium">Crédito Aprovado em até 30 dias</span>
               </div>
               <div className="flex items-center gap-2">
                 <BarChart3 className="w-5 h-5 text-brand-success" />
-                <span className="text-sm font-medium">Análise Preditiva</span>
+                <span className="text-sm font-medium">Juros Reduzidos</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-brand-success" />
+                <span className="text-sm font-medium">Financeiro Organizado</span>
               </div>
             </div>
           </motion.div>
@@ -77,15 +81,11 @@ export default function Hero() {
           >
             <div className="relative z-10 bg-white p-4 rounded-3xl shadow-2xl border border-slate-100">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
-                srcSet="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop 600w,
-                        https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop 1200w"
-                sizes="(max-width: 768px) 600px, 1200px"
-                alt="Dashboard de Análise Financeira com gráficos e métricas"
+                src={heroImage}
+                alt="Mãos de uma profissional analisando relatórios financeiros automatizados e gráficos de crescimento em um laptop"
                 className="rounded-2xl w-full object-cover aspect-[4/3]"
                 loading="eager"
                 fetchpriority="high"
-                referrerPolicy="no-referrer"
               />
 
               {/* Floating Card */}

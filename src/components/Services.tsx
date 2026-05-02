@@ -11,45 +11,51 @@ import { motion } from "motion/react";
 
 const services = [
   {
-    title: "Captação de Recursos",
+    step: "01",
+    title: "Diagnóstico Financeiro Completo",
     description:
-      "Acesso às melhores linhas de crédito bancário e fomento, com taxas competitivas e prazos adequados ao seu fluxo de caixa.",
-    icon: Banknote,
+      "Analisamos sua situação atual, entendemos suas necessidades de caixa e identificamos os gargalos que impedem o acesso a crédito.",
+    icon: LineChart,
     color: "bg-blue-500",
   },
   {
-    title: "Crédito Estruturado",
+    step: "02",
+    title: "Organização e Estruturação",
     description:
-      "Modelagem financeira avançada para operações complexas, garantindo a melhor estrutura de capital para sua empresa.",
-    icon: LineChart,
+      "Colocamos seus números em ordem, organizamos o financeiro com dados reais e preparamos a documentação que o banco precisa ver.",
+    icon: ShieldCheck,
     color: "bg-indigo-500",
   },
   {
-    title: "IA para Análise de Risco",
+    step: "03",
+    title: "Preparação para o Banco",
     description:
-      "Utilizamos algoritmos de IA para prever cenários e otimizar o rating da sua empresa perante as instituições financeiras.",
+      "Analisamos seus números de um jeito que faz o banco te enxergar como risco menor, o resultado são taxas mais baixas e aprovações que antes eram negadas.",
     icon: BrainCircuit,
     color: "bg-purple-500",
   },
   {
-    title: "Automação Financeira",
+    step: "04",
+    title: "Captação do Recurso",
     description:
-      "Implementação de ferramentas inteligentes para automação de processos financeiros e redução de custos operacionais.",
-    icon: Zap,
-    color: "bg-amber-500",
-  },
-  {
-    title: "Consultoria Estratégica",
-    description:
-      "Acompanhamento contínuo para gestão de passivos e planejamento de expansão com foco em sustentabilidade financeira.",
-    icon: ShieldCheck,
+      "Conhecemos os caminhos, enredos e narrativas que tornam sua empresa irresistível para os bancos. Apresentamos seu negócio da forma certa, no momento certo, para conseguir o crédito que você precisa.",
+    icon: Banknote,
     color: "bg-emerald-500",
   },
   {
-    title: "Networking Bancário",
+    step: "05",
+    title: "Acompanhamento Contínuo",
     description:
-      "Relacionamento direto com os principais players do mercado, facilitando a aprovação e liberação de recursos.",
+      "Continuamos ao seu lado, monitorando seu financeiro e identificando novas oportunidades de crédito com melhores taxas.",
     icon: Network,
+    color: "bg-amber-500",
+  },
+  {
+    step: "06",
+    title: "Ferramentas Inteligentes",
+    description:
+      "Implementamos ferramentas que te poupam tempo e mantêm seu financeiro sempre pronto para uma nova rodada de crédito.",
+    icon: Zap,
     color: "bg-rose-500",
   },
 ];
@@ -64,18 +70,25 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-bold uppercase tracking-wider mb-6">
+              Um processo claro e seguro
+            </div>
             <h2 className="text-3xl md:text-4xl mb-4 text-brand-primary">
-              Soluções <span className="text-brand-accent">Inteligentes</span>
+              Como <span className="text-brand-accent">Transformamos</span> sua
+              Situação Financeira
             </h2>
-            <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-              Combinamos expertise bancária tradicional com as mais avançadas
-              tecnologias de Inteligência Artificial para maximizar seus
-              resultados.
+            <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
+              Nosso método em 6 etapas transforma empresários que não conseguem
+              crédito em clientes preferenciais dos bancos com taxas
+              reduzidas.
             </p>
           </motion.div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
+          {/* Decorative connector line for large screens */}
+          <div className="hidden lg:block absolute top-12 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-brand-accent/20 to-transparent" />
+
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -83,21 +96,31 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-8 rounded-3xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all group"
+              className="bg-white p-8 rounded-3xl border border-slate-100 hover:border-brand-accent/30 hover:shadow-xl transition-all group relative z-10"
             >
-              <div
-                className={cn(
-                  "w-14 h-14 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110",
-                  service.color,
-                  "bg-opacity-10",
-                )}
-              >
-                <service.icon
+              <div className="flex items-start gap-4 mb-4">
+                <div
                   className={cn(
-                    "w-7 h-7",
-                    service.color.replace("bg-", "text-"),
+                    "flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center font-bold text-lg text-white transition-transform group-hover:scale-110",
+                    service.color,
                   )}
-                />
+                >
+                  {service.step}
+                </div>
+                <div
+                  className={cn(
+                    "flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center transition-transform group-hover:scale-110",
+                    service.color,
+                    "bg-opacity-10",
+                  )}
+                >
+                  <service.icon
+                    className={cn(
+                      "w-6 h-6",
+                      service.color.replace("bg-", "text-"),
+                    )}
+                  />
+                </div>
               </div>
               <h3 className="text-xl font-bold mb-3 text-brand-primary">
                 {service.title}

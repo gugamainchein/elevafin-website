@@ -11,7 +11,7 @@ export default function SchemaOrganization() {
     name: "ElevaFin",
     alternateName: "ElevaFin Consultoria Financeira",
     description:
-      "Consultoria financeira especializada em captação de recursos e crédito estruturado com inteligência artificial. Mais de 15 anos de experiência no mercado financeiro.",
+      "Resolvemos problemas de crédito negado, caixa apertado, juros altos e financeiro desorganizado para empresários. Com +15 anos dentro de bancos, organizamos, estruturamos e captamos o recurso que sua empresa precisa para crescer.",
     url: "https://elevafin.com.br",
     logo: {
       "@type": "ImageObject",
@@ -41,7 +41,7 @@ export default function SchemaOrganization() {
     },
     founder: {
       "@type": "Person",
-      name: "Wanessa Miranda",
+      name: "Wanessa Mainchein",
       jobTitle: "CEO & Founder",
       description:
         "Especialista em captação de recursos com mais de 15 anos de experiência no mercado financeiro",
@@ -51,15 +51,20 @@ export default function SchemaOrganization() {
       "@type": "Country",
       name: "Brasil",
     },
-    slogan: "Captação de Recursos com Inteligência Estratégica",
+    slogan:
+      "Caixa apertado, crédito negado ou financeiro desorganizado? A gente organiza, estrutura e capta o recurso que sua empresa precisa para crescer.",
     knowsAbout: [
-      "Captação de Recursos",
-      "Crédito Estruturado",
-      "Consultoria Financeira",
-      "Inteligência Artificial Financeira",
-      "Análise de Risco",
-      "Automação Financeira",
-      "Gestão de Passivos",
+      "Crédito Negado",
+      "Aprovação de Crédito Empresarial",
+      "Redução de Juros",
+      "Organização Financeira",
+      "Capital de Giro",
+      "Crédito para PME",
+      "Negociação Bancária",
+      "Consultoria Financeira para Pequenas Empresas",
+      "Financeiro Desorganizado",
+      "Separação de Financeiro Pessoal e Empresarial",
+      "Caixa Apertado",
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -69,54 +74,54 @@ export default function SchemaOrganization() {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Captação de Recursos",
+            name: "Diagnóstico Financeiro Completo",
             description:
-              "Acesso às melhores linhas de crédito bancário e fomento com análise estratégica de mercado",
+              "Analisamos sua situação, identificamos gargalos e entendemos por que seu crédito foi negado",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Crédito Estruturado",
+            name: "Organização Financeira Empresarial",
             description:
-              "Modelagem financeira avançada para operações complexas de crédito",
+              "Organizamos seu financeiro com dados reais e preparamos a documentação que o banco precisa",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "IA para Análise de Risco",
+            name: "Preparação para Aprovação Bancária",
             description:
-              "Algoritmos de inteligência artificial para prever cenários e otimizar rating de crédito",
+              "Analisamos seus números para o banco te ver como baixo risco, resultando em taxas menores",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Automação Financeira",
+            name: "Captação de Crédito Empresarial",
             description:
-              "Implementação de ferramentas inteligentes para automação de processos financeiros",
+              "Negociamos diretamente com bancos as melhores condições de crédito para sua empresa",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Consultoria Estratégica",
+            name: "Acompanhamento Financeiro Contínuo",
             description:
-              "Acompanhamento contínuo para gestão de passivos e planejamento financeiro estratégico",
+              "Monitoramos seu financeiro e identificamos oportunidades de crédito com melhores taxas",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Networking Bancário",
+            name: "Ferramentas Inteligentes",
             description:
-              "Relacionamento direto com os principais players do mercado financeiro",
+              "Implementamos ferramentas que te poupam tempo e mantêm seu financeiro sempre pronto para novas rodadas de crédito",
           },
         },
       ],
