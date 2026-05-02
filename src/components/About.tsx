@@ -25,19 +25,19 @@ export default function About() {
               />
 
               {/* Name Badge */}
-              <div className="absolute bottom-8 left-0 right-0 mx-6 bg-gradient-to-r from-brand-primary/95 to-brand-secondary/95 backdrop-blur-sm px-6 py-4 rounded-2xl border border-brand-accent/20">
-                <p className="text-white text-2xl font-bold tracking-wide">
+              <div className="absolute bottom-4 sm:bottom-8 left-0 right-0 mx-4 sm:mx-6 bg-gradient-to-r from-brand-primary/95 to-brand-secondary/95 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl border border-brand-accent/20 z-20">
+                <p className="text-white text-xl sm:text-2xl font-bold tracking-wide">
                   Wanessa Mainchein
                 </p>
-                <p className="text-brand-accent text-sm font-medium uppercase tracking-wider mt-1">
+                <p className="text-brand-accent text-xs sm:text-sm font-medium uppercase tracking-wider mt-1">
                   CEO & Fundadora
                 </p>
               </div>
 
               {/* Experience Badge */}
-              <div className="absolute -bottom-10 -right-10 bg-brand-primary text-white p-8 rounded-3xl shadow-2xl border-4 border-white">
-                <p className="text-5xl font-display font-bold mb-1">15+</p>
-                <p className="text-sm font-medium uppercase tracking-widest opacity-80">
+              <div className="absolute -bottom-6 -right-4 sm:-bottom-10 sm:-right-10 bg-brand-primary text-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl border-4 border-white z-30">
+                <p className="text-3xl sm:text-5xl font-display font-bold mb-1">15+</p>
+                <p className="text-[10px] sm:text-sm font-medium uppercase tracking-widest opacity-80">
                   Anos de Mercado
                 </p>
               </div>
@@ -94,7 +94,7 @@ export default function About() {
                 </div>
               </div>
 
-              <div className="bg-slate-50 p-8 rounded-3xl border border-slate-100">
+              <div className="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-100">
                 <h3 className="font-bold text-brand-primary mb-4 flex items-center gap-2 text-lg">
                   <Briefcase
                     className="w-5 h-5 text-brand-accent"
