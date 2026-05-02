@@ -10,27 +10,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Environment Variables](#environment-variables)
-  - [Running Locally](#running-locally)
-- [Available Scripts](#available-scripts)
-- [Project Structure](#project-structure)
-- [TypeScript Configuration](#typescript-configuration)
-- [SEO & Performance](#seo--performance)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 ElevaFin is a modern, SEO-optimized corporate website built for a financial consulting firm specializing in:
