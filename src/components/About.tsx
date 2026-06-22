@@ -1,6 +1,7 @@
 import { Award, Briefcase, CheckCircle2, Target } from "lucide-react";
 import { motion } from "motion/react";
 import Wanessa from "../assets/1774298601282.png";
+import Michele from "../assets/1774298601283.jpeg";
 
 export default function About() {
   return (
@@ -30,7 +31,7 @@ export default function About() {
                   Wanessa Mainchein
                 </p>
                 <p className="text-brand-accent text-xs sm:text-sm font-medium uppercase tracking-wider mt-1">
-                  CEO & Fundadora
+                  Co-Founder & CEO
                 </p>
               </div>
 
@@ -87,10 +88,10 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-bold text-brand-primary mb-1 text-base">
-                      Resultado Garantido
+                      Processo Ágil
                     </h3>
                     <p className="text-sm text-slate-600">
-                      Crédito aprovado em até 30 dias.
+                      Análise completa em até 30 dias.
                     </p>
                   </div>
                 </div>
@@ -110,6 +111,116 @@ export default function About() {
                     "Narrativas estratégicas que tornam sua empresa mais atrativa",
                     "Organização financeira que reduz riscos e melhora taxas",
                     "Transparência total em todas as etapas do processo",
+                  ].map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 text-slate-600"
+                    >
+                      <CheckCircle2 className="w-5 h-5 text-brand-success flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Michele Lisboas Section */}
+        <div className="grid lg:grid-cols-2 gap-16 items-center mt-32">
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative lg:order-2"
+          >
+            <div className="relative z-10">
+              <img
+                src={Michele}
+                alt="Michele Lisboas - Especialista em Governança Corporativa e Estruturação Empresarial"
+                className="rounded-3xl shadow-2xl w-full object-cover aspect-[3/4]"
+                loading="lazy"
+                width="600"
+                height="800"
+                referrerPolicy="no-referrer"
+              />
+
+              {/* Name Badge */}
+              <div className="absolute bottom-12 sm:bottom-8 left-0 right-0 mx-4 sm:mx-6 bg-gradient-to-r from-brand-primary/95 to-brand-secondary/95 backdrop-blur-sm px-4 sm:px-6 py-3 sm:py-4 rounded-2xl border border-brand-accent/20 z-20">
+                <p className="text-white text-xl sm:text-2xl font-bold tracking-wide">
+                  Michele Lisboas
+                </p>
+                <p className="text-brand-accent text-xs sm:text-sm font-medium uppercase tracking-wider mt-1">
+                  Co-Founder & COO
+                </p>
+              </div>
+
+              {/* Achievement Badge */}
+              <div className="absolute -bottom-6 -right-4 sm:-bottom-10 sm:-right-10 bg-brand-primary text-white p-5 sm:p-8 rounded-2xl sm:rounded-3xl shadow-2xl border-4 border-white z-30">
+                <p className="text-2xl sm:text-4xl font-display font-bold mb-1">
+                  R$ 60MM+
+                </p>
+                <p className="text-[10px] sm:text-sm font-medium uppercase tracking-widest opacity-80">
+                  Limite Aprovado
+                </p>
+              </div>
+            </div>
+
+            {/* Decorative elements */}
+            <div className="absolute -top-10 -right-10 w-64 h-64 bg-brand-accent/5 rounded-full blur-3xl" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="lg:order-1"
+          >
+            <h2 className="text-3xl md:text-4xl mb-8 text-brand-primary">
+              Estrutura que Sustenta o{" "}
+              <span className="text-brand-accent">Crescimento</span>
+            </h2>
+
+            <div className="space-y-8">
+              <p className="text-lg text-slate-600 leading-relaxed">
+                Especialista em governança corporativa e estruturação
+                empresarial, com atuação direta na organização de empresas que
+                conquistaram mais de{" "}
+                <strong className="text-brand-primary">
+                  R$ 60 milhões em limite operacional aprovado pelo GERIC da
+                  Caixa Econômica Federal
+                </strong>{" "}
+                para financiamento de empreendimentos imobiliários.
+              </p>
+
+              <div className="bg-gradient-to-br from-brand-accent/5 to-brand-primary/5 px-4 py-6 sm:p-8 rounded-3xl border border-brand-accent/20">
+                <h3 className="font-bold text-brand-primary mb-2 text-base uppercase tracking-wider">
+                  Destaque
+                </h3>
+                <p className="text-3xl sm:text-4xl font-display font-bold text-brand-accent mb-1">
+                  + R$ 60MM
+                </p>
+                <p className="text-sm text-slate-600">
+                  em limite operacional aprovado para empreendimentos
+                  imobiliários.
+                </p>
+              </div>
+
+              <div className="bg-slate-50 px-4 py-6 sm:p-8 rounded-3xl border border-slate-100">
+                <h3 className="font-bold text-brand-primary mb-4 flex items-center gap-2 text-lg">
+                  <Briefcase
+                    className="w-5 h-5 text-brand-accent"
+                    aria-hidden="true"
+                  />
+                  Diferenciais Competitivos
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    "Governança e estruturação empresarial",
+                    "Organização para crescimento sustentável",
+                    "Integração entre operação, financeiro e suprimentos",
+                    "Fortalecimento da capacidade de execução",
+                    "Processos escaláveis para expansão dos negócios",
                   ].map((item) => (
                     <li
                       key={item}
