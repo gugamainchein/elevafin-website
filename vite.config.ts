@@ -15,7 +15,6 @@ export default defineConfig(({ mode }) => {
           // Replace environment variables in HTML
           return html
             .replace(/%VITE_GA_ID%/g, env.VITE_GA_ID || "")
-            .replace(/%VITE_API_ENDPOINT%/g, env.VITE_API_ENDPOINT || "");
         },
       },
     ],

@@ -36,7 +36,6 @@ declare module "*.webp" {
  * Vite environment variables types
  */
 interface ImportMetaEnv {
-  readonly VITE_API_ENDPOINT: string;
   readonly VITE_GA_ID: string;
 }
 
